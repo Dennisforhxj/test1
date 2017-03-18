@@ -1,0 +1,51 @@
+.main{
+	padding: 20px;
+	background-color: #eee;
+	border: 1px solid #999;
+	overflow: scroll;
+	height: 580px;
+}
+
+.left,
+.center,
+.right{
+	background-color: #fff;
+}
+
+img{
+	height: 80px;
+	width: 80px;
+}
+
+.left{
+	float: left;
+	width: 200px;
+	padding: 20px;
+	margin: 20px;
+}
+
+.left img{
+	float: left;
+}
+
+.left p{
+	float: right;
+	padding: 0 25px;
+}
+
+.center{
+	width: auto;
+	margin: 20px 240px 0 300px;
+	padding: 20px;
+}
+
+.right{
+	float: right;
+	width: 120px;
+	margin: 20px 50px 0 0 ;
+}
+
+.right img{
+	display: block;
+	margin: 20px;
+}
