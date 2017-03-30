@@ -7,24 +7,37 @@
 <body>
 
   <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
-  <button id="button" onclick="change()">确认填写</button>
+  <button id="button" onclick="changetext()">确认填写</button>
 
   <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
 
 <script type="text/javascript">
 
-function change() {
-  var inpu = document.getElementById("aqi-input");
-  var disp = document.getElementById("aqi-display");
-  var aaaa = inpu.getAttribute()
-  /*    
-  在注释下方写下代码
-  给按钮button绑定一个点击事件
-  在事件处理函数中
-  获取aqi-input输入的值，并显示在aqi-display中
-  */
+function changetext() {
+  //浏览器DOM检测
+  if (!document.getElementById) {
+    return false;
+  }
 
-};
+  //节点存在检验
+  if (!(document.getElementById("aqi-input"))) {
+    return false;
+  }
+  if (!(document.getElementById("aqi-display"))) {
+    return false;
+  }
+  if (!(document.getElementById("button"))) {
+    return false;
+  }
+
+  var bu = document.getElementById("button");
+  var ad = document.getElementById("aqi-display");
+  var ai = document.getElementById("aqi-input");
+  
+  //改变文本
+    ad.innerHTML = parseInt(ai.value);
+
+}
 
 </script>
 </body>
